@@ -45,10 +45,8 @@ export default function Index() {
                     href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
                 />
             </Helmet>
-            <MainHeader/>
 
             <main>
-                <Hero/>
                 <div className="prizes">
                     <div className="container">
                         <div id="prizes" className="prizes__title">
@@ -85,12 +83,6 @@ export default function Index() {
                         </div>
                     </div>
                 </div>
-                <Rules/>
-                <Songs/>
-                <Winners/>
-                <FAQ/>
-                <Join/>
-                <Login/>
             </main>
 
             <Footer/>
