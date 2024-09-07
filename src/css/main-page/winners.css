@@ -1,0 +1,694 @@
+.winners {
+  padding: 134px 0 0;
+}
+.winners__title {
+  width: 718px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  font-family: 'myfontExtraBold';
+}
+.winners__title-span-special {
+  background-color: var(--pink);
+  border-radius: 100px;
+  transform: rotate(-4deg) translateX(-50%);
+  width: 206px;
+  height: 71px;
+  display: inline-block;
+  font-size: 42px;
+  line-height: 1.06;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding: 10px 7px;
+  font-family: 'myfontExtraBold';
+  position: absolute;
+  top: -16px;
+  left: -100px;
+  z-index: 1;
+}
+.winners__title-span-first {
+  display: block;
+  margin: 0 auto;
+  width: 463px;
+  padding-left: 50px;
+  text-align: right;
+}
+.winners__title-span {
+  position: relative;
+  font-size: 50px;
+  line-height: 1;
+  /* text-transform: uppercase; */
+  text-align: center;
+  color: #fff;
+}
+.winners__block {
+  position: relative;
+  display: flex;
+  border-radius: 18px;
+  background-color: #fff;
+  align-items: center;
+  padding: 20px 46px 9px 50px;
+  margin-top: 48px;
+  height: 210px;
+}
+.winners__block-bear {
+  position: absolute;
+  top: -130px;
+  left: auto;
+  right: 29px;
+  width: 158px;
+  height: 146px;
+}
+.winners__block-bear img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.winners__block-number {
+  font-size: 146px;
+  line-height: 1.24;
+  text-transform: uppercase;
+  color: #ff0199;
+  position: relative;
+  font-family: 'myfontExtraBold';
+}
+.winners__block-number-f {
+  order: -4;
+  margin-right: 139px;
+}
+.winners__block-number-s {
+  order: -2;
+  width: 130px;
+  margin-right: 101px;
+}
+.winners__block-number-f::after {
+  display: inline-block;
+  position: absolute;
+  top: 31px;
+  left: auto;
+  right: -114px;
+  content: '';
+  background-image: url(../../img/winners-star.svg);
+  background-repeat: no-repeat;
+
+  background-size: contain;
+  width: 116px;
+  height: 116px;
+}
+.winners__block-number-s::after {
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  left: auto;
+  right: -68px;
+  content: '';
+  background-image: url(../../img/winners-heart.svg);
+  background-repeat: no-repeat;
+
+  background-size: contain;
+  width: 115px;
+  height: 100px;
+}
+.winners__block-number-s::before {
+  display: inline-block;
+  /* content: '+'; */
+  font-family: 'myfontRegular';
+  background-image: url(../../img/winners-plus.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  content: '';
+  position: absolute;
+  top: 69px;
+  left: -73px;
+  width: 37px;
+  height: 37px;
+}
+.winners__block-info {
+}
+.winners__block-info-f {
+  width: 282px;
+  order: -3;
+  margin-right: 113px;
+}
+.winners__block-info-s {
+  width: 250px;
+  order: -1;
+  /* margin-top: -13px; */
+}
+.winners__block--title {
+  font-size: 24px;
+  line-height: 1.24;
+  /* text-transform: uppercase; */
+  color: #ff0199;
+  font-family: 'myfontExtraBold';
+  margin-bottom: 3px;
+}
+.winners__block-text {
+  font-size: 18px;
+  line-height: 1.28;
+  color: #000;
+}
+.prizes {
+  margin-bottom: 121px;
+}
+.prizes__title {
+  margin: 29px auto 40px;
+  font-size: 50px;
+  line-height: 1.06;
+  /* text-transform: uppercase; */
+  color: #fff;
+  font-family: 'myfontExtraBold';
+  text-align: center;
+}
+.prizes__flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.prizes__right-block {
+  position: relative;
+  border-radius: 18px;
+  background-color: #0073e6;
+  height: 200px;
+  padding: 20px 22px 20px 37px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.prizes__left-text p {
+  font-size: 18px;
+  line-height: 1.32;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+.prizes__subtitle {
+  font-family: 'myfontExtraBold';
+
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.prizes__right-img {
+  position: absolute;
+}
+.prizes__right-block:first-child .prizes__right-img {
+  width: 292px;
+  height: 199px;
+  left: 5px;
+  top: -1px;
+}
+.prizes__right-block:nth-child(2) .prizes__right-img {
+  width: 219px;
+  height: 187px;
+  left: 10px;
+  top: 6px;
+}
+.prizes__right-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.prizes__left-text {
+  width: 300px;
+}
+.winners__title-span-we {
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .prizes__title {
+    font-size: 42px;
+    margin: 80px auto 40px;
+  }
+  .winners__block {
+    padding: 20px 15px 9px;
+    justify-content: space-between;
+  }
+  .winners__block-info-f {
+    margin-right: 70px;
+  }
+  .winners__block-number-s {
+    margin-right: 52px;
+  }
+  .winners__block-number-f {
+    margin-right: 98px;
+  }
+  .winners__block-number-f::after {
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    right: -81px;
+  }
+  .winners__block-number {
+    font-size: 100px;
+  }
+  .winners__block-number-s::after {
+    width: 80px;
+    top: 24px;
+    left: auto;
+    right: -18px;
+  }
+  .winners__block-number-s::before {
+    width: 34px;
+    height: 34px;
+    top: 43px;
+    left: -43px;
+  }
+  .prizes__flex {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .prizes__left {
+    width: 100%;
+    height: 389px;
+    padding: 50px 120px;
+  }
+  .prizes__img {
+    left: 120px;
+  }
+  .prizes__right {
+    flex-direction: row;
+    width: 100%;
+  }
+  .prizes__right-block {
+    width: calc(100% / 2 - 10px);
+    padding: 10px 15px 15px 37px;
+  }
+  .prizes__right-block:nth-child(2) .prizes__right-img {
+    width: 188px;
+    height: 157px;
+    left: 1px;
+    top: 24px;
+  }
+  .prizes__right-block:first-child .prizes__right-img {
+    width: 223px;
+    height: 153px;
+    left: 9px;
+    top: 34px;
+  }
+}
+@media (max-width: 1040px) {
+  .prizes__flex {
+    align-items: center;
+    justify-content: center;
+  }
+  .prizes__right-block {
+    width: 100%;
+    padding: 23px 30px 15px 37px;
+  }
+  .prizes__left-text {
+    width: 616px;
+  }
+  .prizes__right-block:first-child .prizes__right-img {
+    left: calc(100% / 9);
+  }
+  .prizes__right-block:last-child .prizes__right-img {
+    left: calc(100% / 9);
+  }
+}
+@media (max-width: 991px) {
+  .winners__title-span {
+    font-size: 42px;
+    display: block;
+    margin: 0 auto;
+  }
+  .winners__title-span-special {
+    width: 160px;
+    height: 50px;
+    font-size: 30px;
+    left: -80px;
+    top: -1px;
+  }
+  .prizes__right-block {
+    width: 630px;
+    padding: 23px 30px 15px 37px;
+  }
+  .prizes__right-block:first-child .prizes__right-img {
+    left: calc(100% / 11);
+  }
+  .prizes__right-block:last-child .prizes__right-img {
+    left: calc(100% / 10 - 3%);
+  }
+  .prizes__title {
+    margin: 0px auto 40px;
+  }
+  .winners__block {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 20px 30px 120px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .winners__block-number {
+    width: calc(100% / 3);
+  }
+  .winners__block-number-f {
+    order: -4;
+    margin-right: 0;
+  }
+  .winners__block-number-s {
+    order: -3;
+    margin-right: 0;
+  }
+  .winners__block-number-f::after {
+    right: auto;
+    left: 50px;
+  }
+  .winners__block-number-s::after {
+    right: auto;
+    left: 70px;
+  }
+  .winners__block-number-s::before {
+    left: -70px;
+  }
+  .winners__block-info {
+    width: calc(100% / 2 - 30px);
+    margin: 0;
+  }
+  .winners__block-bear {
+    top: auto;
+    bottom: -15px;
+  }
+  .prizes__left {
+    width: 100%;
+    height: 389px;
+    padding: 50px 25px;
+  }
+  .prizes__img {
+    left: 15px;
+  }
+  .prizes__left-text {
+    width: 65%;
+  }
+}
+@media (max-width: 768px) {
+  .prizes__left-block::after {
+    display: none;
+  }
+  .winners__block {
+    justify-content: flex-start;
+  }
+  .winners__title {
+    width: auto;
+  }
+  .winners__title-span {
+    font-size: 32px;
+  }
+  .winners__title-span-special {
+    font-size: 24px;
+    width: 115px;
+    height: 48px;
+  }
+  .winners__block-info {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .winners__block-number {
+    width: auto;
+  }
+  .winners__block-number-f {
+    margin-left: -13px;
+    margin-right: 140px;
+  }
+  .winners__block-number-f::after {
+    left: 40px;
+  }
+  .winners__block-number-s::before {
+    left: -40px;
+  }
+  .prizes__right {
+    gap: 20px;
+  }
+  .prizes__left {
+    padding: 234px 25px 30px;
+  }
+  .prizes__left-block {
+    width: 100%;
+    text-align: center;
+  }
+  .prizes__img {
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    /*width: 321px;*/
+    /*height: 335px;*/
+    /*top: -46px;*/
+  }
+  .prizes__right-block:first-child .prizes__right-img {
+    left: calc(100% / 10 - 5%);
+  }
+  .prizes__right-block:last-child .prizes__right-img {
+    left: calc(100% / 10 - 5%);
+  }
+}
+@media (max-width: 700px) {
+  .winners__title-span-special {
+    top: -13px;
+    font-size: 24px;
+    width: 115px;
+    height: 48px;
+    left: calc(100vw / 4 - 1%);
+  }
+}
+@media (max-width: 650px) {
+  .winners {
+    padding: 50px 0 0;
+  }
+  .winners__title-span-first {
+    width: 100%;
+  }
+  .winners__title-span-special {
+    left: 30%;
+  }
+  .prizes__title {
+    font-size: 36px;
+    margin: 50px auto 40px;
+  }
+  .prizes__left-text {
+    font-size: 16px;
+    width: 100%;
+  }
+  .prizes__right-block {
+    height: 370px;
+    padding: 26px 23px;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .prizes__right-block:first-child .prizes__right-img {
+    width: 230px;
+    height: 218px;
+    left: 40px;
+  }
+  .prizes__right-block:last-child .prizes__right-img {
+    width: 264px;
+    height: 226px;
+    left: 40px;
+  }
+}
+@media (max-width: 550px) {
+  .winners__title {
+    font-size: 34px;
+    line-height: 0.92;
+  }
+  .winners {
+    padding: 81px 0 0;
+  }
+  .prizes {
+    margin-bottom: 71px;
+  }
+  .winners__title-span {
+    margin-left: -10px;
+    font-size: 34px;
+    line-height: 0.92;
+  }
+  .winners__title-span-first {
+    text-align: center;
+    padding-left: 114px;
+  }
+  .winners__title-span-special {
+    left: -124%;
+    top: -6px;
+    height: 40px;
+    transform: rotate(-5deg) translateX(-50%);
+  }
+  .winners__block {
+    margin-top: 30px;
+    margin-left: 5px;
+    padding: 8px 27px 61px;
+  }
+  .winners__block-number {
+    font-size: 84px;
+    line-height: 1.24;
+  }
+  .winners__block-number-f {
+    margin-left: -2px;
+    margin-right: 145px;
+  }
+  .winners__block-number-f::after {
+    width: 67px;
+    height: 67px;
+    left: 32px;
+  }
+  .winners__block-number-s::before {
+    width: 28px;
+    height: 28px;
+    left: -51px;
+    top: 37px;
+  }
+  .winners__block-number-s::after {
+    width: 64px;
+    height: 57px;
+    left: 50px;
+  }
+  .winners__block--title {
+    font-size: 22px;
+    line-height: 1.24;
+    margin-bottom: 1px;
+  }
+  .winners__block-info {
+  }
+  .winners__block-text {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  .winners__block-info-f {
+    width: 100%;
+    max-width: 248px;
+    margin-top: 14px;
+  }
+  .winners__block-info-s {
+    max-width: 230px;
+    margin-bottom: 0;
+  }
+  .winners__block-bear {
+    width: 119px;
+    height: 110px;
+    bottom: -13px;
+    right: 16px;
+  }
+  .prizes__right {
+    flex-wrap: wrap;
+  }
+  .prizes__title {
+    font-size: 34px;
+    line-height: 1.06;
+
+    margin: 70px auto 0;
+    /* padding-right: 15px; */
+  }
+  .prizes__img {
+    left: 49%;
+    transform: translateX(-50%);
+    width: 345px;
+    height: 335px;
+    top: -43px;
+  }
+  .prizes__left-title {
+    font-size: 20px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+    margin-bottom: 2px;
+    padding-right: 18px;
+    text-align: left;
+  }
+  .prizes__left-text {
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: left;
+  }
+
+  .prizes__left {
+    padding: 256px 25px 30px 34px;
+  }
+  .prizes__flex {
+    gap: 20px;
+    padding-top: 28px;
+    overflow: hidden;
+  }
+  .prizes__right {
+    gap: 17px;
+  }
+  .prizes__right-block:first-child .prizes__right-img {
+    width: 341px;
+    height: 268px;
+    left: 42px;
+    top: -14px;
+  }
+  .prizes__right-block:nth-child(2) .prizes__right-img {
+    top: 11px;
+  }
+
+  .prizes__subtitle {
+    font-size: 22px;
+    line-height: 1.24;
+  }
+  .prizes__left-text p {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  .prizes__right-block {
+    height: 370px;
+    padding: 26px 31px;
+  }
+  .prizes__right-block:last-child {
+    height: 346px;
+  }
+}
+@media (max-width: 370px) {
+  .prizes__right-block:nth-child(2) .prizes__right-img {
+    top: -2px;
+    left: 23px;
+  }
+  .winners__block-number {
+    font-size: 70px;
+  }
+  .winners__block-number-f::after {
+    width: 58px;
+    height: 58px;
+    left: 32px;
+    top: 13px;
+  }
+  .winners__block-number-f {
+    margin-right: 125px;
+  }
+  .winners__block-number-s::after {
+    width: 58px;
+    height: 48px;
+    left: 50px;
+    top: 19px;
+  }
+  .winners__block-number-s::before {
+    width: 25px;
+    height: 25px;
+    left: -43px;
+    top: 30px;
+  }
+  .winners__block-bear {
+    width: 114px;
+    height: 108px;
+    bottom: -13px;
+    right: 16px;
+  }
+  .prizes__left {
+    padding: 247px 16px 30px 34px;
+  }
+  .winners__title-span-first {
+    padding-left: 103px;
+  }
+  .prizes__left-title {
+    font-size: 18px;
+  }
+  .prizes__right-block {
+    padding: 74px 16px 30px 35px;
+  }
+  .winners__title {
+    margin-left: 0;
+  }
+  .winners__title-span {
+    margin-left: 0;
+  }
+}
