@@ -1,16 +1,17 @@
+import * as React from "react";
 import  {useEffect} from "react";
 import {Routes, Route, BrowserRouter as Router} from 'react-router-dom';
 import useRefreshToken from "./hooks/useRefreshToken";
-import Videos from "./pages/Videos.jsx";
-import UploadSong from "./pages/Moderation/UploadSong.jsx";
-import VideoModeration from "./pages/Moderation/VideoModeration.jsx";
-import TopDownVideos from "./pages/TopDownVideos.jsx";
-import Account from "./pages/Account.jsx";
 import {useDispatch, useSelector} from "react-redux";
 import {setLoading} from "./features/auth/authSlice";
 import Middleware from "./middleware/Middleware.jsx";
-import Index from "./pages/Index.jsx";
-import Rules from "./pages/Rules.jsx";
+
+const IndexPage = React.lazy(() => import('./pages/Index.jsx'))
+const VideosPage = React.lazy(() => import('./pages/Videos.jsx'))
+const AccountPage = React.lazy(() => import('./pages/Account.jsx'))
+const TopDownVideosPage = React.lazy(() => import('./pages/TopDownVideos.jsx'))
+const RulesPage = React.lazy(() => import('./pages/Rules.jsx'))
+const VideoModerationPage = React.lazy(() => import('./pages/Moderation/VideoModeration.jsx'))
 
 function App() {
     const refresh = useRefreshToken()
@@ -41,7 +42,45 @@ function App() {
         <Router>
             <Middleware>
                 <Routes>
-                    <Route path="/" element={<VideoModeration />} />
+                    <Route path="/video-moderation" element={
+                        <React.Suspense fallback={<>...</>}>
+                            <VideoModerationPage />
+                        </React.Suspense>
+                    } />
+
+                    <Route path="/rules" element={
+                        <React.Suspense fallback={<>...</>}>
+                            <RulesPage />
+                        </React.Suspense>
+                    } />
+
+                    <Route path="/video/:id" element={
+                        <React.Suspense fallback={<>...</>}>
+                            <TopDownVideosPage />
+                        </React.Suspense>
+                    } />
+                    <Route path="/videos-top-down" element={
+                        <React.Suspense fallback={<>...</>}>
+                            <TopDownVideosPage />
+                        </React.Suspense>
+                    } />
+                    <Route path="/account" element={
+                        <React.Suspense fallback={<>...</>}>
+                            <AccountPage />
+                        </React.Suspense>
+                    } />
+
+                    <Route path="/videos" element={
+                        <React.Suspense fallback={<>...</>}>
+                            <VideosPage />
+                        </React.Suspense>
+                    } />
+
+                    <Route path="/" element={
+                       <React.Suspense fallback={<>...</>}>
+                           <IndexPage />
+                       </React.Suspense>
+                    }/>
                 </Routes>
             </Middleware>
         </Router>
