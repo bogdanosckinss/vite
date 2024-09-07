@@ -1,6 +1,4 @@
 import {useEffect} from "react";
-import '../css/login.css'
-import '../css/styles.css'
 import smallPrize from '../img/prizes-small-1.svg'
 import smallPrize2 from '../img/prizes-small-2.svg'
 import MainHeader from "../components/Header/MainHeader.jsx";
@@ -94,6 +92,8 @@ export default function Index() {
             </main>
 
             <Footer/>
+            <link rel='stylesheet' type='text/css' href='../css/styles.css' />
+            <link rel='stylesheet' type='text/css' href='../css/login.css' />
         </>
     )
 }
