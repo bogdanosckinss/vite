@@ -41,32 +41,7 @@ function App() {
         <Router>
             <Middleware>
                 <Routes>
-                    <Route path="/video-moderation" element={<VideoModeration />} />
-                    <Route path="/song" element={<UploadSong />} />
-
-                    <Route path="/rules" element={<Rules />} />
-
-                    <Route path="/video/:id" element={
-                        <TopDownVideos />
-                    } />
-                    <Route path="/videos-top-down" element={
-                        <TopDownVideos />
-                    } />
-                    <Route path="/account" element={
-                        <AuthenticatedRouteComponent>
-                            <Account />
-                        </AuthenticatedRouteComponent>
-                    } />
-
-                    <Route path="/videos" element={
-                        <AuthenticatedRouteComponent>
-                            <Videos />
-                        </AuthenticatedRouteComponent>
-                    } />
-
-                    <Route path="/" element={
-                        <Index />
-                    } />
+                    <Route path="/" element={<VideoModeration />} />
                 </Routes>
             </Middleware>
         </Router>
