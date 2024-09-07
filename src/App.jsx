@@ -5,6 +5,7 @@ import useRefreshToken from "./hooks/useRefreshToken";
 import {useDispatch, useSelector} from "react-redux";
 import {setLoading} from "./features/auth/authSlice";
 import Middleware from "./middleware/Middleware.jsx";
+import Index from "./pages/Index.jsx";
 
 const IndexPage = React.lazy(() => import('./pages/Index.jsx'))
 const VideosPage = React.lazy(() => import('./pages/Videos.jsx'))
@@ -77,9 +78,7 @@ function App() {
                     } />
 
                     <Route path="/" element={
-                       <React.Suspense fallback={<>...</>}>
-                           <IndexPage />
-                       </React.Suspense>
+                       <Index />
                     }/>
                 </Routes>
             </Middleware>
