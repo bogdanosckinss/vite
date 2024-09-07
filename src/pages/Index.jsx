@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import {lazy, Suspense, useEffect} from "react";
 import smallPrize from '../img/prizes-small-1.svg'
 import smallPrize2 from '../img/prizes-small-2.svg'
 import MainHeader from "../components/Header/MainHeader.jsx";
@@ -11,6 +11,9 @@ import Join from "./Index/Join.jsx";
 import Login from "./Index/Login.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import {Helmet} from "react-helmet";
+import StylingComponent from "../css/LoginAndBaseStyles.jsx";
+
+const Styling = lazy(() => import('../css/LoginAndBaseStyles.jsx'))
 export default function Index() {
     useEffect(() => {
         document.body.classList.forEach(item => document.body.classList.remove(item))
@@ -43,6 +46,9 @@ export default function Index() {
                     href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
                 />
             </Helmet>
+            <Suspense fallback={<>...</>}>
+                <Styling />
+            </Suspense>
             <MainHeader/>
 
             <main>
@@ -92,8 +98,6 @@ export default function Index() {
             </main>
 
             <Footer/>
-            <link rel='stylesheet' type='text/css' href='../css/styles.css' />
-            <link rel='stylesheet' type='text/css' href='../css/login.css' />
         </>
     )
 }
