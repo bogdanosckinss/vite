@@ -11,7 +11,6 @@ import Join from "./Index/Join.jsx";
 import Login from "./Index/Login.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import {Helmet} from "react-helmet";
-import StylingComponent from "../css/LoginAndBaseStyles.jsx";
 
 const Styling = lazy(() => import('../css/LoginAndBaseStyles.jsx'))
 export default function Index() {
