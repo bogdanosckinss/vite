@@ -1,6 +1,4 @@
 import {useEffect} from "react";
-import '../css/login.css'
-import '../css/styles.css'
 import smallPrize from '../img/prizes-small-1.svg'
 import smallPrize2 from '../img/prizes-small-2.svg'
 import MainHeader from "../components/Header/MainHeader.jsx";
@@ -45,8 +43,10 @@ export default function Index() {
                     href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
                 />
             </Helmet>
+            <MainHeader/>
 
             <main>
+                <Hero/>
                 <div className="prizes">
                     <div className="container">
                         <div id="prizes" className="prizes__title">
@@ -83,6 +83,12 @@ export default function Index() {
                         </div>
                     </div>
                 </div>
+                <Rules/>
+                <Songs/>
+                <Winners/>
+                <FAQ/>
+                <Join/>
+                <Login/>
             </main>
 
             <Footer/>
